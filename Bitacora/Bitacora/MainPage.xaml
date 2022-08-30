@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bitacora.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bitacora de vuelo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Inicio de Sesión" FontSize="Title" HorizontalOptions="CenterAndExpand" Padding="30,10,30,10"/>
+        <Entry Placeholder="Usuario" x:Name="txtUsuario"></Entry>
+        <Entry Placeholder="Contraseña" x:Name="txtPassword" IsPassword="True"></Entry>
+        <Button Text="Ingresar" x:Name="btnLogin" Clicked="btnLogin_Clicked"></Button>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
+
