@@ -22,7 +22,7 @@ namespace Bitacora
         {
             Login log = new Login
             {
-                usuario = txtUsuario.Text,
+                email = txtUsuario.Text,
                 password = txtPassword.Text
             };
             Uri RequestUri = new Uri("http://imageapi.mayseecruz.com/public/api/login");
