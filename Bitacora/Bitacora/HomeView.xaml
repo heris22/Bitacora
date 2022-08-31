@@ -5,8 +5,20 @@
     x:Class="Bitacora.HomeView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Subir Imagenes" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="Cyan"></Label>
-
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Subir Imagenes" HorizontalOptions="Center" TextColor="White" FontSize="36"></Label>
+            </Frame>
+            <Grid>  
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />  
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>  
+                    <RowDefinition Height="*" />  
+                </Grid.RowDefinitions>  
+                <Button x:Name="btnSelectPic" Grid.Row="0" Grid.Column="0" Text="Select picture" Clicked="btnSelectPic_Clicked" BackgroundColor="DodgerBlue" TextColor="White" />  
+                <Button x:Name="btnTakePic" Grid.Row="0" Grid.Column="1" Text="Take picture" Clicked="btnTakePic_Clicked" BackgroundColor="DodgerBlue" TextColor="White" />  
+            </Grid>
+             <Image x:Name="imageView" HeightRequest="300" WidthRequest="400" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
